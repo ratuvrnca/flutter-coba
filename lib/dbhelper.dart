@@ -11,7 +11,7 @@ class DbHelper {
   Future<Database> initDb() async {
     //untuk menentukan nama database dan lokasi yg dibuat
     Directory directory = await getApplicationDocumentsDirectory();
-    String path = directory.path + 'waldan.db';
+    String path = directory.path + 'veronica.db';
 
     //create, read databases
     var itemDatabase = openDatabase(path, version: 4, onCreate: _createDb);
